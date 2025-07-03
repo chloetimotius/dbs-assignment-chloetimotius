@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Dashboard Management</title>
+    <link href="/main.css" rel="stylesheet" />
+    <link href="/index.css" rel="stylesheet" />
+    <script src="./index.js" type="text/javascript"></script>
+    <script src="../../authAdmin.js" defer></script>
+    <script src="../../headerAdmin.js" defer></script>
+</head>
+
+<body>
+    <div id="admin-header-container"></div>
+
+    <section>
+<h1>Age Group Spending</h1>
+<div class="box">
+    <form class="search">
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="M" checked> Male<br>
+        <input type="radio" name="gender" value="F"> Female<br><br>
+
+        <label>Min Total Spending:</label><br>
+        <input type="number" name="minTotalSpending" placeholder="e.g. 7000"><br><br>
+
+        <label>Min Member Total Spending:</label><br>
+        <input type="number" name="minMemberTotalSpending" placeholder="e.g. 8000"><br><br>
+
+        <button type="submit">Search</button>
+    </form>
+</div>
+
+    </div>
+
+<h1>All Member Orders</h1>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Age Group</th>
+            <th>Total Spending</th>
+            <th>No. of Members</th>
+        </tr>
+    </thead>
+    <tbody id="summary-body">
+    </tbody>
+</table>
+</section>
+</body>
+
+</html>
