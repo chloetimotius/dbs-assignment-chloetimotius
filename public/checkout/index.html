@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+    <link href="/main.css" rel="stylesheet" />
+    <link href="/index.css" rel="stylesheet" />
+    <script src="../auth.js" defer></script>
+    <script src="../header.js" defer></script>
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <section style="height: auto">
+        <div>
+            <h1>Checkout</h1>
+
+            <!-- Cart Table -->
+            <table border="1" id="cart-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Unit Price</th>
+                        <th>Quantity</th>
+                        <th>Sub-total</th>
+                        <th>Discount</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items-tbody"></tbody>
+            </table>
+
+            <!-- Cart Summary -->
+            <div class="cart-summary-main">
+                <h2>Cart Summary</h2>
+                <div id="cart-summary"></div>
+            </div>
+
+            <!-- Discounts Summary -->
+            <div class="cart-discount-summary">
+                <h3>Discounts Applied</h3>
+                <div id="cart-discounts"></div>
+            </div>
+
+            <!-- Discounted Subtotal -->
+<div id="discounted-subtotal" style="margin: 10px 0; font-weight: bold;"></div>
+            <!-- Checkout Button -->
+            <button id="checkout-button">Place Order</button>
+        </div>
+    </section>
+</body>
+</html>
